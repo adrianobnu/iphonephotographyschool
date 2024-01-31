@@ -1,5 +1,11 @@
 # Iphone Photography School
 
+# Youtube video explaining the project
+
+I have created an small explanation of how to use this project, and how to run it. The logic, code and some testing. Its an 9 minutes long video, but you can fast forward the video.
+
+https://www.youtube.com/watch?v=AGa5nrPceyY
+
 This project has created using Laravel, Laravel Actions, Laravel Sail, Laravel Octane, Laravel Filament and PEST.
 
 ## How to run this project
