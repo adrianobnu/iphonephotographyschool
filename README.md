@@ -10,6 +10,8 @@ This project has created using Laravel, Laravel Actions, Laravel Sail, Laravel O
 
 ## How to run this project
 
+You dont need to change anything in the code. I have hardcoded the .env file to make more easier to run.
+
 ### Install the composer dependencies
 
 ```
