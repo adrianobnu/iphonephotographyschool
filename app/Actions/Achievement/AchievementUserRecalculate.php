@@ -2,6 +2,7 @@
 
 namespace App\Actions\Achievement;
 
+use App\Actions\Badge\BadgeUserVerify;
 use App\Enums\AchievementType;
 use App\Models\User;
 use Illuminate\Console\Command;
@@ -14,7 +15,7 @@ class AchievementUserRecalculate
     /**
      * @var string
      */
-    public string $commandSignature = 'achievement:recalculate';
+    public string $commandSignature = 'user:recalculate';
 
     public function handle(): void
     {
@@ -26,6 +27,8 @@ class AchievementUserRecalculate
 
                 AchievementUserVerify::run($user, $totalPerType, $type);
             });
+
+            BadgeUserVerify::run($user);
         });
     }
 
