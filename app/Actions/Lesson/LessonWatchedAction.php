@@ -53,7 +53,7 @@ class LessonWatchedAction
     {
         $userId = $command->ask('Give the User ID', 1);
 
-        if (!$user = User::find($userId)) {
+        if (!is_numeric($userId) || !$user = User::find($userId)) {
             return $command->error('User not found.');
         }
 
