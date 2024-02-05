@@ -18,6 +18,8 @@ uses(Tests\TestCase::class, Illuminate\Foundation\Testing\RefreshDatabase::class
         $this->seed(DatabaseSeeder::class);
     })->in('Feature');
 
+uses(Tests\TestCase::class)->in('Architecture');
+
 
 /*
 |--------------------------------------------------------------------------
